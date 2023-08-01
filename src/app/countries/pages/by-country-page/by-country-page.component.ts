@@ -14,9 +14,7 @@ export class ByCountryPageComponent implements OnInit {
   public initialValue: string = '';
   public isLoading: boolean = false;
 
-  constructor(private countriesService: CountriesService) {
-    
-  }
+  constructor(private countriesService: CountriesService) {  }
 
   ngOnInit(): void {
     this.countries = this.countriesService.cacheStore.byCountries.countries;
@@ -31,5 +29,4 @@ export class ByCountryPageComponent implements OnInit {
         this.isLoading = false;
       });
   }
-
 }

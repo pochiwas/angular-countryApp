@@ -32,14 +32,4 @@ export class ByRegionPageComponent implements OnInit{
     .subscribe( countries => {this.countries = countries
     });
   }
-
-  
-
-
-
-
-
-
-
-
 }
